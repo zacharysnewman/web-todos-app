@@ -1,6 +1,6 @@
 /* Custom styles go here. Tailwind classes are primarily used in HTML. */
 
-html, body {
+body {
 	font-family: 'Inter', sans-serif;
 	background-color: #1a1a1a;
 	color: #f0f0f0;
