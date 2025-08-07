@@ -1,3 +1,16 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js').then(registration => {
+    registration.onupdatefound = () => {
+      const newWorker = registration.installing;
+      newWorker.onstatechange = () => {
+        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+          console.log('New version available. Reloading...');
+          window.location.reload();
+        }
+      };
+    };
+  });
+}
 document.addEventListener('DOMContentLoaded', () => {
 	// State management for the application
 	const appState = {
