@@ -1,10 +1,10 @@
 const CACHE_NAME = 'my-pwa-cache-v1'; // 🔁 bump this on each deploy
 
 const FILES_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/src/script.js', // ← updated path
+  './',
+  'index.html',
+  'styles/style.css',
+  'src/script.js', // ← updated path
 ];
 
 self.addEventListener('install', event => {
