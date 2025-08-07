@@ -1,0 +1,30 @@
+/* Custom styles go here. Tailwind classes are primarily used in HTML. */
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #1a1a1a;
+	color: #f0f0f0;
+}
+
+/* Custom colors matching the dark theme */
+.bg-gray-800 { background-color: #2d2d2d; }
+.bg-gray-900 { background-color: #1a1a1a; }
+.border-gray-700 { border-color: #4a4a4a; }
+.text-green-400 { color: #4ade80; }
+.bg-green-500 { background-color: #22c55e; }
+.progress-bar-bg { background-color: #4a4a4a; }
+
+/* Hover effect for list items */
+.list-item:hover { background-color: #3a3a3a; }
+
+/* Basic transition for buttons for a smoother effect */
+.btn {
+	transition: background-color 0.3s ease;
+}
+
+/* Modal backdrop for overlay effect */
+.modal-backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1000; /* Ensure modal is on top of other content */
+}
+}
